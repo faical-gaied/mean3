@@ -1,0 +1,17 @@
+<div class="container">
+    
+    <div class="row col-12">
+        <div class="col-3 p-2"  *ngFor="let c of categories">
+            <div class="card" *ngIf="valideCategorie(c.strCategory)">
+                <a class="btn btn-warning"  routerLink="/categorie/cocktails/{{c.strCategory}}"  >
+                    <h1>{{c.strCategory}}</h1>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+</div>

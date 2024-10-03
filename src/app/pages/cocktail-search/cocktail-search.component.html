@@ -1,0 +1,19 @@
+<div class="container" p-4>
+    <input type="text" (keyup)="searchCocktail(scocktail.value)" #scocktail placeholder="Rechercher un cocktail..." class="form-control">
+    <div class="row" col-12>
+        <div class="col-4" mb-2 *ngFor="let cocktail of cocktails" >
+            
+            <div class="card" >
+                <img src="{{cocktail.strDrinkThumb}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a class="btn btn-success">{{ cocktail.strDrink }}</a>
+                </div>
+            </div>  
+        </div>
+    </div>
+   
+</div>
+
+  
+
+  
